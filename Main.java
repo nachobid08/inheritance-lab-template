@@ -11,6 +11,12 @@ public class Main
     //Teacher you = new Teacher("C", 30, "F");
     Teacher you = new Teacher("C", 30, "F", "Math", 45000.0);
 
+
+    Student nacho = new Student("Nacho Bid", 16, "M", "97845", 3.8);
+    CollegeStudent jack = new CollegeStudent("Jack Frost", 18, "M", "98637", 4.0, 1, "Computer Science");
+
     System.out.println("My teacher is: " + you.getName());
+    System.out.println(nacho);
+    System.out.println(jack);
   }
 }
