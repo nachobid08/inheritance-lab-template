@@ -1,16 +1,33 @@
 public class Teacher extends Person{
     
-    // TODO: Add fields.
+   private String mySubject;
+   private double mySalary;
 
-    public Teacher(String name, int age, String gender)
+    public Teacher(String name, int age, String gender, String subject, double salary)
     {
         super(name, age, gender);
+        mySubject = subject;
+        mySalary = salary;
     }
 
-    // TODO Add methods
+    public String getSubject(){
+        return mySubject;
+    }
+
+    public double getSalary(){
+        return mySalary;
+    }
+
+    public void setSubject(String subject){
+        mySubject = subject;
+    }
+
+    public void setSalary(double salary){
+        mySalary = salary;
+    }
 
     public String toString(){
-        // TODO: improve this.
-        return super.toString() + ", is a teacher!";
+   
+        return super.toString() + ", subject: "+ mySubject + ", salary: "+mySalary + ", is a teacher!";
     }
 }
