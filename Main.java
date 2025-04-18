@@ -8,7 +8,9 @@ public class Main
     System.out.println("Hi, " + me.getName() + ". What's your GPA?");
     System.out.println("My GPA is: " + ((Student)me).getGPA());
 
-    Teacher you = new Teacher("C", 30, "F");
+    //Teacher you = new Teacher("C", 30, "F");
+    Teacher you = new Teacher("C", 30, "F", "Math", 45000.0);
+
     System.out.println("My teacher is: " + you.getName());
   }
 }
